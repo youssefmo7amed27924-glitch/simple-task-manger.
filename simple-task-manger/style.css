@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.app {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.filters button {
+    flex: 1;
+    background-color: #06903b;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.filters button:hover {
+    background-color: #d0d0d0;
+}
+
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.tasks span {
+    font-size: 14px;
+    color: #333;
+    word-break: break-all;
+    text-align: right;
+}
+
+.tasks div {
+    display: flex;
+    gap: 5px;
+}
+
+.tasks button {
+    padding: 5px 10px;
+    font-size: 11px;
+    background-color: #6c757d;
+}
+
+.tasks button:hover {
+    background-color: #5a6268;
+}
+
+.tasks.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
